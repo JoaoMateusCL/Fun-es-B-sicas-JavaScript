@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS</title>
+</head>
+<body>
+    <header>
+        <h1>Barra de nevegação</h1>
+        <a href="../index.html">Home</a>
+        <a href="Projeto-Exemplo 01.html">Exemplo 01</a>
+        <a href="Projeto-Exemplo 02.html">Exemplo 02</a>
+        <a href="Projeto-Exemplo 03.html">Exemplo 03</a>
+        <a href="Projeto-Exemplo 04.html">Exemplo 04</a>
+        <a href="Projeto-Exemplo 05.html">Exemplo 05</a> 
+    </header>
+    <h1>Trabalhando com dados v2.0</h1>
+    <button onclick="inicio()">Clique para começar</button>
+    <section id="resultado">
+        <p>Aqui vai aparacer o resultado...</p>
+
+    </section>
+    <script>
+        function inicio()
+        {
+            let nome = window.prompt("Qual o seu nome?")
+            let res = window.document.getElementById("resultado")
+            res.innerHTML += `<p>Olá, <strong>${nome}</strong>! é um prazer te conhecer! &#x1F596;` 
+        }
+    </script>
+</body>
+</html>
